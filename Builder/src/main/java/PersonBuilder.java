@@ -36,10 +36,9 @@ public class PersonBuilder implements Builder {
 
     @Override
     public Person build() {
-        Person person = new Person(name, surName, age, address);
-        if (person.notEmpty()) {
+        if(name == null || surName == null){
             throw new IllegalStateException("Не заполнены поля Имя и(или) Фамилия");
         }
-        return person;
+        return new Person(name, surName, age, address);
     }
 }

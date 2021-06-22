@@ -67,10 +67,6 @@ public class Person {
         return Objects.hash(name, surName);
     }
 
-    public Boolean notEmpty() {
-        return name == null || surName == null;
-    }
-
     public void happyBirthday() {
         if (hasAge()) {
             PersonBuilder builder = new PersonBuilder();

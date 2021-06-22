@@ -20,7 +20,7 @@ public class Main {
  .setAddress("Vlodimir")
  .build();
  */
-/** отсутствует необходимое поле name
+/**отсутствует необходимое поле name
  Person name = new PersonBuilder()
  .setSurname("Radchenko")
  .setAge(45)
